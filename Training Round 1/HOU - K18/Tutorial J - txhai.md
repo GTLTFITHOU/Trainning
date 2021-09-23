@@ -20,7 +20,7 @@ Với một cạnh có hướng từ U -> V sẽ có ý nghĩa là U đã thắn
 
 Khi chia n người chơi ra làm hai tập A, B. Với các đỉnh ở tập A ta có thể đếm các cạnh đi ra từ A (từ A đi các đỉnh khác, tức là A thắng một ai đó) hay còn gọi là out degree, gọi tổng out degree của tất cả các đỉnh thuộc A là DO(A). DO(A) có thể chia làm 2 phần DO(A) = DO(X) +DO(Y), với X là các đỉnh thuộc A và Y là các đỉnh thuộc B. Dễ thấy k ở đây chính là DO(Y), ta cần tính DO(Y). Ta có thể dễ dàng tính DO(A) từ input để bài, DO(X) bằng ý (1), từ đó ta tính được DO(Y) = DO(A) - DO(X).
 
-- Tính DO(X) bằng ý (1) : Trong đồ thị có hướng đầy đủ (lưu ý khi tách một tập con các đỉnh của đồ thị có hướng đầy đủ ta vẫn thu được đồ thị có hướng đầy đủ) thì DO(X) hay tổng out degree bằng $\binom{n}{2}$ với n là số lượng đỉnh. ![Imgur](https://i.imgur.com/pFSyS23.png)
+- Tính DO(X) bằng ý (1) : Trong đồ thị có hướng đầy đủ (lưu ý khi tách một tập con các đỉnh của đồ thị có hướng đầy đủ ta vẫn thu được đồ thị có hướng đầy đủ) thì DO(X) hay tổng out degree bằng C(2,5) với n là số lượng đỉnh. ![Imgur](https://i.imgur.com/pFSyS23.png)
 
   Trong hình trên tập A bao gồm 3 đỉnh 1, 4, 5. Ta có thể thấy k lúc này bằng 3( 5 - > 2, 1 -> 2, 1 -> 3). 
 
