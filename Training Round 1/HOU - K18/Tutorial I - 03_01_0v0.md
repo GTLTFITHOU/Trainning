@@ -49,41 +49,38 @@ signed main()
     ios::sync_with_stdio(0);
     cin.tie(0); cout.tie(0);
 
-    vector<int> a;
-    a.push_back(5);
+    vector<int> h_primes;
+    h_primes.push_back(5);
     for (int i = 2; (4 * i + 1) < maxn; i++)
     {
         bool oke = true;
         int x = 4 * i + 1;
-        for (int j = 0; j < a.size() && a[j] * a[j] <= x; j++)
-            if (x % a[j] == 0)
+        for (int j = 0; j < h_primes.size() && h_primes[j] * h_primes[j] <= x; j++)
+            if (x % h_primes[j] == 0)
             {
                 oke = false;
                 break;
             }
         if (oke)
-            a.push_back(x);
+            h_primes.push_back(x);
     }
-    vector<int> v;
-    for (int i = 0; i < a.size(); i++)
-        for (int j = i; j < a.size(); j++)
-            if (a[i] * a[j] <= maxn)
-                v.push_back(a[i] * a[j]);
+    vector<int> h_semi_primes;
+    for (int i = 0; i < h_primes.size(); i++)
+        for (int j = i; j < h_primes.size(); j++)
+            if (h_primes[i] * h_primes[j] <= maxn)
+                h_semi_primes.push_back(h_primes[i] * h_primes[j]);
             else
                 break;
-    sort(v.begin(), v.end());
-    v.erase(unique(v.begin(), v.end()), v.end());
+    sort(h_semi_primes.begin(), h_semi_primes.end());
+    h_semi_primes.erase(unique(h_semi_primes.begin(), h_semi_primes.end()), h_semi_primes.end());
     while(true)
     {
         int h;
         cin >> h;
         if (h == 0)
             return 0;
-        auto ans = upper_bound(v.begin(), v.end(), h) - v.begin();
+        auto ans = upper_bound(h_semi_primes.begin(), h_semi_primes.end(), h) - h_semi_primes.begin();
         cout << h << " " << ans << "\n";
     }
 }
-
-
-
 
