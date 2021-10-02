@@ -7,7 +7,7 @@ Cho 1 chuỗi String s tối đa 100000 ký tự. Yêu cầu : chuỗi đã cho 
 * Định nghĩa từ đa nghĩa : là một từ mà được ghép lại bởi các từ là đảo ngữ của nhau. 
 * Định nghĩa đảo ngữ: là một từ hoặc cụm từ mà các chữ cái có thể được sắp xếp lại để thu được một từ khác
 
-#Lập luận: 
+# Lập luận: 
 - Từ đa nghĩa được hình thành bởi các từ là đảo ngữ của nhau.
   Vậy N ( N: độ dài của chuỗi s)  = x*n (n : độ dài của gốc đảo ngữ). (1) 
 --> Từ (1) ta có thể thấy được độ dài gốc là các số bị N chia hết (N%x==0). Ta có thể hình thành được
@@ -19,8 +19,8 @@ sắp xếp lại  strA ="abc", strB="bca". Sau khi sắp xếp lại có strA="
 Ta tách chuỗi s đã cho thành các chuỗi con n(đã tìm) và so sánh.
  Nếu các chuỗi con bằng nhau ta thu được kết quả còn không thì in -1; 
 
-##Code
-
+## Code
+```
 #include <bits/stdc++.h>
 /**
 * @author: huykhanh
@@ -89,4 +89,5 @@ int main() {
     while(T--) solve();
 return 0;
 }
+```
 
