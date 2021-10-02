@@ -20,7 +20,7 @@ Ta tách chuỗi s đã cho thành các chuỗi con n(đã tìm) và so sánh.
  Nếu các chuỗi con bằng nhau ta thu được kết quả còn không thì in -1; 
 
 ## Code
-```
+```cpp
 #include <bits/stdc++.h>
 /**
 * @author: huykhanh
