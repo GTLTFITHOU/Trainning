@@ -24,7 +24,7 @@ Cấu trúc dữ liệu Disjoint Set Union (DSU) cho phép bạn thêm các cạ
 - Mảng vector<int> <b>dsu<b>;  tất cả thông tin về các tập hợp thành phố sẽ được lưu giữ trong mảng.
 - int pv;   lưu phạm vi tối thiểu của ô tô. 
 
- ##Lời giải:
+ ## Lời giải:
 
 Có n người chơi cùng chơi một trò chơi, trong đó, tất cả người chơi đều chơi đúng một trận với n - 1 người còn lại, kết quả chỉ có thắng và thua.
 
