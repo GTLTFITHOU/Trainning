@@ -22,5 +22,5 @@
 
 - [G by HOU - Young Buffalo](https://github.com/GTLTFITHOU/Trainning/blob/main/Training%20Round%201/HOU%20-%20Young%20Buffalo/Tutorial%20G%20-%20DatHoang.md)
 
-  
+- [L by anh Sơn Đinh](https://github.com/GTLTFITHOU/Trainning/blob/main/Training%20Round%201/Other/L%20tutorial%20from%20SonDinh.pdf)
 
