@@ -67,7 +67,7 @@ vector<vertex>  cur;
         return 0;
     };
 ```
-- Mình sử dụng lamda function giúp tiết kiệm hàm biết cần khai báo hơn.
+- Mình sử dụng lamda function giúp tiết kiệm biến cần khai báo hơn.
 - Sinh các đường đi có thể từ đỉnh 1 và đưa vào vector cur. Luôn kiểm tra đường đi ngắn nhất qua các đỉnh.
 ```cpp
    for(int i = 1; i <= n; i++) {
