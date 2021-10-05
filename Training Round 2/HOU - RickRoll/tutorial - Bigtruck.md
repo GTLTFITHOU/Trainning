@@ -7,7 +7,7 @@ Link submit: https://open.kattis.com/problems/bigtruck
 
 ## Tóm tắt đề bài
 
-Cho N thành phố khác nhau được đánh số (1 <= i <= N), ở thành phố i có A[i] vật phẩm. Cho M con đường khác nhau, mỗi con đường biểu diễn bởi x, y ,z với x và y thể hiện có đường đi giữa 2 thành phố này. z là khoảng cách của 2 thành phố, đây là đồ thị không chu trình nên có thể đi từ x -> y cũng như y -> x.
+Cho N thành phố khác nhau được đánh số (1 <= i <= N), ở thành phố i có A[i] vật phẩm. Cho M con đường khác nhau, mỗi con đường biểu diễn bởi x, y ,z với x và y thể hiện có đường đi giữa 2 thành phố này. z là khoảng cách của 2 thành phố, đây là đồ thị vô  hướng nên có thể đi từ x -> y cũng như y -> x.
 
 ## Yêu cầu
 
