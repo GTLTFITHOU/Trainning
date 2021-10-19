@@ -29,6 +29,25 @@
 ### Training Round 2
 - [Result](https://open.kattis.com/contests/ugq6b4/standings)
 
+- [H by HOU - K18](https://github.com/GTLTFITHOU/Trainning/blob/main/Training%20Round%202/HOU%20-%20K18/Tutorial%20G%20-%20pdthang2000.md)
+
+- [J by HOU - RickRoll](https://github.com/GTLTFITHOU/Trainning/blob/main/Training%20Round%202/HOU%20-%20RickRoll/tutorial%20-%20Bigtruck.md)
+
+  
+
+
+### Training Round 3
+![img](https://drive.google.com/uc?export=view&id=1jnW7YasJcGuJrIxT0dyOw8dSfrzPJqYK)
+- [Link contest](https://codeforces.com/contest/1250)
+
+
+
+### Training Round 4
+![img](https://drive.google.com/uc?export=view&id=1Cb2u3aNQ61h6S8VPHvrg_FaEq3u5ZaHf)
+- [Link contest](https://codeforces.com/contest/1250)
+
   
 
   
+
+
