@@ -44,10 +44,9 @@
 
 ### Training Round 4
 ![img](https://drive.google.com/uc?export=view&id=1Cb2u3aNQ61h6S8VPHvrg_FaEq3u5ZaHf)
-- [Link contest](https://codeforces.com/contest/1250)
+- [Link contest](https://codeforces.com/contest/1252)
 
   
 
   
-
 
