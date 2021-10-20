@@ -30,7 +30,7 @@
 - [Result](https://open.kattis.com/contests/ugq6b4/standings)
 
 - [H by HOU - K18](https://github.com/GTLTFITHOU/Trainning/blob/main/Training%20Round%202/HOU%20-%20K18/Tutorial%20G%20-%20pdthang2000.md)
-
+- [K by HOU - K18](https://github.com/GTLTFITHOU/Trainning/blob/main/Training%20Round%202/HOU%20-%20K18/Tutorial_K.pdf)
 - [J by HOU - RickRoll](https://github.com/GTLTFITHOU/Trainning/blob/main/Training%20Round%202/HOU%20-%20RickRoll/tutorial%20-%20Bigtruck.md)
 
   
