@@ -18,14 +18,14 @@ https://codeforces.com/contest/1252/problem/C
 - Các ô trong ma trận được tạo thành từ 2 mảng a và b. 
 - Chẵn + chẵn = chẵn hoặc lẻ + lẻ = chẵn. 
 - Di chuyển sang ngang được khi và chỉ khi b[i] và b[i+1] ( hoặc b[i] và b[i-1] ) cùng chẵn hoặc cùng lẻ.
-- Di chuyển theo chiều thẳng đứng được khi  a[i] và a[i+1] ( hoặc a[i] và a[i-1] cùng chẵn hoặc cùng lẻ.\
+- Di chuyển theo chiều thẳng đứng được khi  a[i] và a[i+1] ( hoặc a[i] và a[i-1] cùng chẵn hoặc cùng lẻ.
 ## Lời giải:
 - Chúng ta sẽ sử dụng bộ 2 DSU của mảng a và mảng b để kiểm tra.
 - Xét theo hàng : Nếu hàng của A và hàng của B có chung 1 đỉnh => (1) true
 - Xét theo cột: Nếu cột của A và cột của B có chung 1 đỉnh => (2) true
 - Nếu cả (1) và (2) đều đúng -> điểm A có thể đến điểm B và ngược lại không
-vd:
-![image](https://drive.google.com/uc?export=view&id=1HXmgZSFsxUk9J0rVrvab3YNJAdtsr3G-)
+-vd:
+![image]https://drive.google.com/uc?export=view&id=1HXmgZSFsxUk9J0rVrvab3YNJAdtsr3G-
 * Ta có 2 truy vấn :
 	2 2 4 2 = NO 
 	2 1 2 3 = YES
