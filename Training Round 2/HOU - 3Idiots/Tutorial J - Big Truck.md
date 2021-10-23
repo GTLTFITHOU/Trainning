@@ -1,7 +1,7 @@
 # Incremental Induction
 https://open.kattis.com/problems/bigtruck
 ## Tóm tắt đề bài
-Cho n ~(2 \le n \le 100)~ địa điểm (đỉnh) và mỗi điểm có a[i] vật phẩm. Chúng ta được cung cấp m đường đi
+Cho n ~(2 <= n <= 100)~ địa điểm (đỉnh) và mỗi điểm có a[i] vật phẩm. Chúng ta được cung cấp m đường đi
 từ địa điểm x đến địa điểm y ( hoặc ngược lại) và khoảng cách giữa 2 địa điểm này.
 
 ## Yêu cầu
