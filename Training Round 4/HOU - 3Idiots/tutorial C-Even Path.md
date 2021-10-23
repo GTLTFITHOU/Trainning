@@ -27,8 +27,8 @@ https://codeforces.com/contest/1252/problem/C
 - vd:
 ![image](https://drive.google.com/uc?export=view&id=1HXmgZSFsxUk9J0rVrvab3YNJAdtsr3G-)
 * Ta có 2 truy vấn :
-	2 2 4 2 = NO 
-	2 1 2 3 = YES
+- 2 2 4 2 = NO 
+- 2 1 2 3 = YES
 - trong ví dụ đầu tiên ta có thể thấy điểm A và điểm B xét theo cột chung gốc là 2 nhưng xét theo hàng lại không có có sự kết nối => NO 
 - trong ví dụ thứ 2. Xét theo hàng ta thấy hàng 1 và hàng 2 liên thông với nhau và khi xét theo cột có cột 2 và 3 liên thông nhau => YES
 # CODE
