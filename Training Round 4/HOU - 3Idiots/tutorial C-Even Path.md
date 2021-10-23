@@ -25,7 +25,7 @@ https://codeforces.com/contest/1252/problem/C
 - Xét theo cột: Nếu cột của A và cột của B có chung 1 đỉnh => (2) true.
 - Nếu cả (1) và (2) đều đúng -> điểm A có thể đến điểm B và ngược lại không.
 - vd:
- ![image](https://drive.google.com/uc?export=view&id=1HXmgZSFsxUk9J0rVrvab3YNJAdtsr3G)
+![image](https://drive.google.com/uc?export=view&id=1HXmgZSFsxUk9J0rVrvab3YNJAdtsr3G-)
 * Ta có 2 truy vấn :
 	2 2 4 2 = NO 
 	2 1 2 3 = YES
