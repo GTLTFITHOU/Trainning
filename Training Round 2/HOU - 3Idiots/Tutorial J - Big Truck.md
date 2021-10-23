@@ -12,7 +12,7 @@ Tìm đường đi ngắn nhất từ điểm 1 đến điểm n và thu thập 
  Áp dụng thuật toán Djikstra để tìm đường đi ngắn nhất và greedy tìm số lượng vật phẩm nhiều nhất
 
 ## Cấu trúc dữ liệu 
-```
+``` cpp
 /** 
 a[i] là  vật phẩm tại điểm i
 b[i] là khoảng cách từ ngắn nhất từ đỉnh 1 đến đỉnh i  (khởi tạo ban đầu là vô cùng: trong bài này là 1e9)
@@ -23,27 +23,30 @@ int a[110],b[110],can[110];
 bool used[110];
 ```
 
-```
+``` cpp
 /** (I) chúng ta sẽ lưu lại khoảng cách và đỉnh được duyệt */
-    priority_queue<pair<int,int>> q;  // {-d(1y),y}  đoạn đường từ đỉnh 1 đến y và đỉnh y. Ta lưu dưới dạng số âm để ưu tiên các đoạn đường ngắn nhất sẽ ở đầu danh sách
+    priority_queue<pair<int,int>> q; 
+// {-d(1y),y}  đoạn đường từ đỉnh 1 đến y và đỉnh y. Ta lưu dưới dạng số âm để ưu tiên các đoạn đường ngắn nhất sẽ ở đầu danh sách
 ```
 
-```
+``` cpp
 /**(II) mảng này để lưu lại trạng thái từ đỉnh x đến y và khoảng cách d */
     vector<vector<pair<int,int>>> adj(110); 
 ```
 
 ## Lời giải
 ```
-- B1: Ta xét các vị trí xe có thể đi qua trong cấu trúc (I) ở trên. Ban đầu xe ở đỉnh 1 và số vật phẩm có thể thu thập là can[1]=a[1] như vậy đỉnh khả thi lúc đầu là đỉnh 1.
-- B2: ta xét các đoạn đường khả thi d(1x) với các đỉnh y ( là các đỉnh được nối trực tiếp với đỉnh x) và đánh dấu đỉnh x đã được xét để tránh tình trạng lặp lại đỉnh đã xét. 
-- B3: nếu đoạn đường từ 1 đến y thông qua x ngắn hơn đoạn đường của y hiện tại hoặc đoạn đường bằng nhau nhưng thu thập được nhiều vật phẩm hơn thì ta coi đoạn đường này là đoạn đường
-khả thi và lưu vào trong cấu trúc dữ liệu. 
+- B1: Ta xét các vị trí xe có thể đi qua trong cấu trúc (I) ở trên. Ban đầu xe ở đỉnh 1 và số vật phẩm có
+  thể thu thập là can[1]=a[1] như vậy đỉnh khả thi lúc đầu là đỉnh 1.
+- B2: ta xét các đoạn đường khả thi d(1x) với các đỉnh y ( là các đỉnh được nối trực tiếp với đỉnh x) và 
+  đánh dấu đỉnh x đã được xét để tránh tình trạng lặp lại đỉnh đã xét. 
+- B3: nếu đoạn đường từ 1 đến y thông qua x ngắn hơn đoạn đường của y hiện tại hoặc đoạn đường bằng nhau 
+  nhưng thu thập được nhiều vật phẩm hơn thì ta coi đoạn đường này là đoạn đường khả thi và lưu vào trong cấu trúc dữ liệu. 
 - B4: Tiếp tục xét các đoạn đường khả thi đến khi không còn đoạn đường nào khả thi mà chưa được đánh dấu.
 - B5: đưa ra kết luận. Nếu khoảng cách của đỉnh n vẫn là vô cùng (1e9) thì chứng minh không thể đi từ đỉnh 1 đến đỉnh n. 
 ```
 
-```
+```cpp
     q.push({0,1}); // khởi tạo khoảng cách 0 tại đỉnh 1
     can[1]=a[1]; // đỉnh 1 thu được vật phẩm a[1] 
     
