@@ -24,10 +24,9 @@ typedef   unsigned long long ull;
 const int mod = (int) 1e9 + 7;
 const ll MOD = 972663749;
 
-/*
+/**
     có n nhân viên  và k đội
     các đội đánh số từ 1 đến k
-
 */
 ll check( multiset<int> st,ll m){
     ll res=0;

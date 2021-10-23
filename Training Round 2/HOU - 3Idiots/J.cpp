@@ -30,38 +30,49 @@ const ll MOD = 972663749;
 //vector<vector<int>> a(101,vector<int>(100));
 
 
-int a[110],b[110],can[110];
+/** 
+a[i] là  vật phẩm tại điểm i
+b[i] là khoảng cách từ ngắn nhất từ đỉnh 1 đến đỉnh i  
+can[i] là số lượng vật phẩm có thể lấy được nhiều nhất tại điểm i
+used[i] chỉ trạng thái của đỉnh i đã được duyệt hay chưa 
+*/
+int a[110],b[110],can[110]; 
 bool used[110];
+
 void solve()
 {
     int n,m;
     cin>>n;
     for(int i=1;i<=n;++i){
-        cin>>a[i];
-        b[i]=1e9;
+        cin>>a[i]; 
+        b[i]=1e9; // khoảng cách của đỉnh i ban đầu được coi là vô cùng
     }
-    b[1]=0;
-    cin>>m;
+    b[1]=0; // khoảng cách của đỉnh 1 bằng ( đỉnh 1 đến đỉnh 1 không có sự thay đổi ) 
+    cin>>m; 
     int x,y,d;
-    priority_queue<pair<int,int>> q;
-    vector<vector<pair<int,int>>> adj(110);
+
+    /** chúng ta sẽ lưu lại khoảng cách và đỉnh được duyệt */
+    priority_queue<pair<int,int>> q;  
+
+    /** mảng này để lưu lại trạng thái từ đỉnh x đến y và khoảng cách d */
+    vector<vector<pair<int,int>>> adj(110); 
     for(int i=0;i<m;++i)
     {
         cin>>x>>y>>d;
-        adj[x].pb({y,d});
+        adj[x].pb({y,d}); 
         adj[y].pb({x,d});
     }
 
-    q.push({0,1});
-    can[1]=a[1];
+    q.push({0,1}); // khởi tạo khoảng cách 0 tại đỉnh 1
+    can[1]=a[1]; // đỉnh 1 thu được vật phẩm a[1] 
     while(!q.empty()){
-            x=q.top().second; q.pop();
-        if(used[x]) continue;
-        used[x]=true;
+            x=q.top().second; q.pop(); // x : đỉnh cần duyệt
+        if(used[x]) continue; // đỉnh này đã được duyệt thì bỏ qua
+        used[x]=true; // đánh dấu đỉnh n
 
-        for(auto u : adj[x] ){
-             y= u.f, d=u.s;
-             if(b[x] +d < b[y]){
+        for(auto u : adj[x] ){ // chúng ta đi qua tất cả các đỉnh nối với đỉnh x
+             y= u.f, d=u.s; // y: là đỉnh được nối với x,  d: khoảng cách đỉnh x đến y
+             if(b[x] +d < b[y]){  
                 can[y]=can[x]+a[y];
                 b[y]= b[x]+d;
                 q.push({-b[y],y});
